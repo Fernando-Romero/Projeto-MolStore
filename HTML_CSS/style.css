@@ -1,7 +1,14 @@
+#title{
+    background-color: aliceblue;
+    padding-top: 0px;
+}
 .title{
     text-align: start;
     font-size: 50px;
-    margin-left: 25px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+hr{
+    block-size: 100%;
 }
