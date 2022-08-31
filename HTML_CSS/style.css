@@ -9,6 +9,9 @@
     margin-top: 10px;
     margin-bottom: 1px;
 }
+.title_center{
+    text-align: center;
+}
 hr{
     block-size: 100%;
 }
