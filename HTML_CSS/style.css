@@ -1,4 +1,4 @@
-
+@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -6,6 +6,7 @@
 
 body{
     margin: 0px;
+    height: 100vw;
 }
 
 header{
@@ -14,9 +15,10 @@ header{
     background-color: rgb(255, 232, 232);
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.363);
+    position: relative;
 }
 
-nav>a{
+nav a{
     font-size: 1.1em;
     padding: 50px;
     text-decoration: none;
@@ -24,17 +26,28 @@ nav>a{
     font-weight: bold;
 }
 
-nav>a:hover{
+nav div{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate( 0%, -50%);
+}
+
+nav a:hover{
     color: red;
     transition-duration: 0.3s;
 }
 
-nav>form{
+nav form{
     display: inline-block;
 }
 
-nav>form>input{
+nav form input{
     width: 500px;
     height: 30px;
     padding-left: 5px;
+}
+
+#icon{
+    height: 50px;
 }
