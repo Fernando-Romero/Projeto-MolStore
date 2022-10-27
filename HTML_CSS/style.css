@@ -11,7 +11,7 @@ body{
 header{
     margin: 0px;
     padding: 20px 0px 25px;
-    background-color: rgba(165, 42, 42, 0.082);
+    background-color: rgb(255, 232, 232);
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.363);
 }
