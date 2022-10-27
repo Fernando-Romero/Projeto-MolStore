@@ -17,6 +17,7 @@ header{
 }
 
 nav>a{
+    font-size: 1.1em;
     padding: 50px;
     text-decoration: none;
     color: black;
@@ -25,5 +26,15 @@ nav>a{
 
 nav>a:hover{
     color: red;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
+}
+
+nav>form{
+    display: inline-block;
+}
+
+nav>form>input{
+    width: 500px;
+    height: 30px;
+    padding-left: 5px;
 }
