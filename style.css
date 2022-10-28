@@ -1,17 +1,26 @@
+@charset "UTF-8";
 
+:root{
+    --cor1: #BF0404;
+    --cor2: #A60A0A;
+    --cor3: #400D1A;
+    --cor4: #153959;
+    --cor5: #102940;
+}
 
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+html, body{
     margin: 0px;
+    min-height: 100vh;
 }
 
 header{
     margin: 0px;
     padding: 20px 0px 25px;
-    background-color: rgb(255, 232, 232);
+    background-color: var(--cor4);
     border-radius: 0px 0px 35px 35px;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.363);
     position: relative;
@@ -21,8 +30,9 @@ nav a{
     font-size: 1.1em;
     padding: 50px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
+    font-variant: small-caps;
 }
 
 nav div{
@@ -33,7 +43,7 @@ nav div{
 }
 
 nav a:hover{
-    color: red;
+    color: var(--cor1);
     transition-duration: 0.3s;
 }
 
@@ -45,6 +55,33 @@ nav form input{
     width: 500px;
     height: 30px;
     padding-left: 5px;
+}
+
+section#bluebox{
+    margin: 50px;
+    padding: 50px;
+    min-height: 100vh;
+    background-color: var(--cor4);
+    color: white;
+    text-align: justify;
+    box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.336);
+    border-radius: 30px;
+}
+
+section p{
+    margin-bottom: 60px;
+}
+
+footer{
+    padding: 6px;
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+}
+
+body#login{
+    background-color: var(--cor3);
 }
 
 #icon{
