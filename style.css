@@ -19,10 +19,9 @@ html, body{
 
 header{
     margin: 0px;
-    padding: 20px 0px 25px;
+    padding: 20px 0px 10px;
     background-color: var(--cor4);
-    border-radius: 0px 0px 35px 35px;
-    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.363);
+    box-shadow: 0px 1px 0px 0px rgb(0, 0, 0);
     position: relative;
 }
 
@@ -55,6 +54,12 @@ nav form input{
     width: 500px;
     height: 30px;
     padding-left: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+nav form input:hover{
+    border: 0.5px solid var(--cor1) ;
 }
 
 section#bluebox{
@@ -64,12 +69,14 @@ section#bluebox{
     background-color: var(--cor4);
     color: white;
     text-align: justify;
-    box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.336);
+    box-shadow: inset 0px 0px 3px 2px rgba(0, 0, 0, 0.336);
+    box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.486);
     border-radius: 30px;
 }
 
 section p{
-    margin-bottom: 60px;
+    margin-bottom: 20vh;
+    line-height: 2em;
 }
 
 footer{
