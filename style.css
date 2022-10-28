@@ -6,14 +6,13 @@
 
 body{
     margin: 0px;
-    height: 100vw;
 }
 
 header{
     margin: 0px;
     padding: 20px 0px 25px;
     background-color: rgb(255, 232, 232);
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 35px 35px;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.363);
     position: relative;
 }
