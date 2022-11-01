@@ -58,10 +58,6 @@ nav form input{
     border: none;
 }
 
-nav form input:hover{
-    border: 0.5px solid var(--cor1) ;
-}
-
 section#bluebox{
     margin: 50px;
     padding: 50px;
@@ -74,9 +70,11 @@ section#bluebox{
     border-radius: 30px;
 }
 
-section p{
+section#bluebox p{
     margin-bottom: 20vh;
     line-height: 2em;
+    font-size: 2em;
+    /* text-align: left; */
 }
 
 footer{
