@@ -58,6 +58,16 @@ nav form input{
     border: none;
 }
 
+section#login{
+    margin: auto;
+    background-color: white;
+    width: 75vw;
+    text-align: center;
+    padding: 27vh 0px;
+    font-size: 2em;
+    display:  ;
+}
+
 article.bluebox{
     margin: 50px;
     padding: 20px 50px;
