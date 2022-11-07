@@ -58,23 +58,37 @@ nav form input{
     border: none;
 }
 
-section#bluebox{
+article.bluebox{
     margin: 50px;
-    padding: 50px;
-    min-height: 100vh;
+    padding: 20px 50px;
+    /* min-height: 100vh; */
     background-color: var(--cor4);
     color: white;
-    text-align: justify;
+    text-align: center;
     box-shadow: inset 0px 0px 3px 2px rgba(0, 0, 0, 0.336);
-    box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.486);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.486);
     border-radius: 30px;
 }
 
-section#bluebox p{
-    margin-bottom: 20vh;
+article.bg{
+background-color: black;
+background-image: url(imagens/space-galaxy-background.jpg);
+background-attachment: fixed;
+background-size: cover;
+}
+
+article.bg p{
+    color: white;
+    font-size: 4.5em;
+    padding: 80px;
+    text-shadow: 3px 3px 5px var(--cor5);
+    text-align: center;
+}
+
+article.bluebox p{
+    /* margin-bottom: 20vh; */
     line-height: 2em;
-    font-size: 2em;
-    /* text-align: left; */
+    font-size: 4.5em;
 }
 
 footer{
