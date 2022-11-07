@@ -1,18 +1,26 @@
 
 
+:root{
+    --cor1: #E07D7B;
+    --cor2: #C72A28 ;
+    --cor3: #94201E ;
+    --cor4: #470F0E ;
+    --cor5: #472524 ;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     margin: 0px;
-    height: 100vw;
-}
+    height: 100vh;
+    }
 
 header{
     margin: 0px;
     padding: 20px 0px 25px;
-    background-color: rgb(255, 232, 232);
+    background-color: var(--cor1);
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.363);
     position: relative;
@@ -34,7 +42,7 @@ nav div{
 }
 
 nav a:hover{
-    color: red;
+    color: var(--cor2);
     transition-duration: 0.3s;
 }
 
@@ -46,6 +54,12 @@ nav form input{
     width: 500px;
     height: 30px;
     padding-left: 5px;
+    border-radius: 10px;
+    border: var(--cor2) solid 1px;
+}
+
+nav form input::after{
+    border: var(--cor3) solid 1px;
 }
 
 #icon{
