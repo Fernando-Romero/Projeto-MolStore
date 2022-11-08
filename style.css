@@ -59,12 +59,38 @@ nav form input{
 }
 
 section#login{
-    margin: auto;
-    background-color: white;
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, 0.849);
     width: 75vw;
     text-align: center;
     padding: 27vh 0px;
     font-size: 2em;
+    border-radius: 2%;
+}
+
+section#login p{
+    margin-bottom: 3px;
+}
+
+section#login input{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+}
+
+section#login input.inputtxt{
+    width: 25vw;
+}
+
+section#login input.submit{
+    border-radius: 40%;
+    border: 1px solid black;
+    height: 4vh;
+}
+
+section#login input.submit:hover{
+    background-color: #102940;
+    border: 1px solid black;
+    border-radius: 40%;
+    color: white;
 }
 
 article.bluebox{
@@ -80,19 +106,21 @@ article.bluebox{
 }
 
 article.bg{
-background-color: black;
-background-image: url(imagens/space-galaxy-background-1920-1080.jpg);
-background-attachment: fixed;
-background-size: cover;
-background-position: center center;
+    box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.466);
+    background-color: black;
+    background-image: url(imagens/space-galaxy-background-1920-1080.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
 }
 
 article.bg p{
     color: white;
     font-size: 4.5em;
     padding: 80px;
-    text-shadow: 3px 3px 5px var(--cor5);
+    text-shadow: 3px 3px 0px var(--cor5);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.295);
 }
 
 article.bluebox p{
