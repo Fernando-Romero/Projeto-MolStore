@@ -139,11 +139,10 @@ article.bluebox{
     margin: 50px;
     padding: 20px 50px;
     /* min-height: 100vh; */
-    background-color: var(--cor4);
-    color: white;
+    /* background-color: var(--cor4); */
+    color: black;
     text-align: center;
-    box-shadow: inset 0px 0px 3px 2px rgba(0, 0, 0, 0.336);
-    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.486);
+    /* box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.486); */
     border-radius: 30px;
 }
 
