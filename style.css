@@ -65,7 +65,6 @@ section#login{
     text-align: center;
     padding: 27vh 0px;
     font-size: 2em;
-    display:  ;
 }
 
 article.bluebox{
@@ -82,9 +81,10 @@ article.bluebox{
 
 article.bg{
 background-color: black;
-background-image: url(imagens/space-galaxy-background.jpg);
+background-image: url(imagens/space-galaxy-background-1920-1080.jpg);
 background-attachment: fixed;
 background-size: cover;
+background-position: center center;
 }
 
 article.bg p{
