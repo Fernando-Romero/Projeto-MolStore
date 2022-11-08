@@ -58,6 +58,47 @@ nav form input{
     border: none;
 }
 
+section.prod{
+    margin: 50px 0px;
+}
+
+div.prod{
+    height: 85vh;
+    width: 25vw;
+    background-color:  #15395900;
+    display: inline-block;
+    border-radius: 0% 0% 5% 5%;
+    margin: 3.5vw;
+    position: relative;
+    border: 1px solid var(--cor4);
+}
+
+div.img{
+    background-color: white;
+    height: 25vw;
+    width: 25vw;
+    margin: auto;
+    background-color: white;
+    background-size: 25vw 25vw; 
+    background-repeat: no-repeat;
+}
+
+div.prod:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.603);
+}
+
+div.img#p1{
+    background-image: url(imagens/imagens-produtos/p1.jpeg);
+}
+
+div.img#p2{
+    background-image: url(imagens/imagens-produtos/p2.jpeg);
+}
+
+div.img#p3{
+    background-image: url(imagens/imagens-produtos/p3.jpeg);
+}
+
 section#login{
     margin: 5px auto;
     background-color: rgba(255, 255, 255, 0.849);
@@ -84,6 +125,7 @@ section#login input.submit{
     border-radius: 40%;
     border: 1px solid black;
     height: 4vh;
+    font-weight: bold;
 }
 
 section#login input.submit:hover{
