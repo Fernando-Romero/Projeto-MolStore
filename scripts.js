@@ -193,5 +193,5 @@ class Validator {
     e.preventDefault();
   
     validator.validate(form);
-  });
+});
   
