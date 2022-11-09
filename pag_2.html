@@ -30,6 +30,44 @@
                 </form>
                 <a href="login.html">Login</a>
             </div>
+
+            <div id="produtos">
+
+            </div><!--produtos-->
+        
+            <div id="carrinho">
+        
+            </div><!--carrinho-->
+            <script>
+                const itens = [
+        
+                    {
+                        id: 0,
+                        nome: 'camiseta',
+                        img: '#',
+                        quantidade: 0
+                    },
+                    {
+                        id: 0,
+                        nome: 'camiseta',
+                        img: '#',
+                        quantidade: 0
+                    },
+                    {
+                        id: 0,
+                        nome: 'camiseta',
+                        img: '#',
+                        quantidade: 0
+                    },
+                ]
+
+                inicializarLoja =() => {
+                    var containerProdutos = document.getElementById('produtos');
+                    itens.map ((vall)=>{
+                        console.log(val.nome);
+                    })
+                }
+            </script>
         </nav>
     </header>
 </body>
