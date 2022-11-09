@@ -312,6 +312,17 @@ input, label {
     width: 100%;
 }
   
+a {
+    color: #E60084;
+}
+  
+body {
+    padding-top: 5vh;
+    background-image: url('../img/bg-register-page.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+}
+  
   /* form */
 #main-container {
     width: 500px;
@@ -333,7 +344,7 @@ form {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+  
 .full-box {
     flex: 1 1 100%;
     position: relative;
