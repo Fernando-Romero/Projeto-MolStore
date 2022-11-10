@@ -32,17 +32,29 @@
             </div>
         </nav>
     </header>
-    <section id="login">
+    <section id="login" class="b">
         <h1>CADASTRO</h1>
         <form action="" method="post">
             <p>Email</p>
-            <input type="text" name="username" id="username" placeholder="Exemple@email.com" class="inputtxt">
+            <input type="text" name="email" id="email" placeholder="Exemple@email.com" class="inputtxt">
             <div class="pai">
                 <div class="elm" id="d1">
 
+                    <p>Nome</p>
+                    <input type="text" name="nome" id="nome" placeholder="Exemple@email.com" class="inputtxt2">
+
+                    <p>Senha</p>
+                    <input type="password" name="password"  class="inputtxt2">
+
                 </div>
                 <div class="elm" id="d2">
-                    
+
+                    <p>Sobrenome</p>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Exemple@email.com" class="inputtxt2">
+
+                    <p>Confirme sua senha</p>
+                    <input type="password" name="password"  class="inputtxt2">
+
                 </div>
             </div>
             <input type="button" value="Entrar" class="submit" onclick="ver()">
