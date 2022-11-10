@@ -221,16 +221,48 @@ div.prod:hover>div.img#p15{
 
 section#login{
     margin: 5px auto;
-    background-color: rgba(255, 255, 255, 0.849);
+    background-color: rgb(255, 255, 255);
     width: 75vw;
+    height: 90vh;
+    position: relative;
+    /* padding: 27vh 0px; */
+}
+
+section#login>form{
+    height: 70vh;
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+section#login h1{
+    padding-top: 20px;
     text-align: center;
-    padding: 27vh 0px;
     font-size: 2em;
-    border-radius: 2%;
+    color: var(--cor2);
+    position: relative;
 }
 
 section#login p{
     margin-bottom: 3px;
+    font-size: 2em;
+    text-align: center;
+}
+
+section#login h3 a:hover{
+    text-decoration: underline;
+}
+
+section#login h3 a{
+    color: var(--cor1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section#login h3{
+    padding-top: 50px;
+    font-weight: normal;
+    text-align: right;
 }
 
 section#login input{
@@ -238,7 +270,10 @@ section#login input{
 }
 
 section#login input.inputtxt{
-    width: 25vw;
+    width: 70%;
+    height: 20px;
+    margin: auto;
+    display: block;
 }
 
 section#login input.submit{
