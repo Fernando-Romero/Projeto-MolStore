@@ -281,7 +281,7 @@ section#login input.inputtxt{
     display: block;
 }
 
-section#login input.submit:active{
+section#login input:active{
     border-radius: 0px;
 }
 
