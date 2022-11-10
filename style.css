@@ -230,7 +230,7 @@ section#login{
 }
 
 section#login>form{
-    height: 70vh;
+    min-height: 70vh;
     width: 70%;
     padding-top: 30px;
     margin: auto;
@@ -297,15 +297,16 @@ section#login input.submit:hover{
 }
 
  /* parte do cadastro */
+
 section#login div.pai{
     margin: 10px auto;
-    display: block;
+    position: relative;
+    width: 70%;
 }
 
 section#login div.elm{
     height: 40vh;
-    width: 35%;
-    background-color: #102940;
+    width: 49.3%;
     display: inline-block;
 }
 
