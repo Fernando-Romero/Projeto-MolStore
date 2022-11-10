@@ -58,6 +58,8 @@ nav form input{
     border: none;
 }
 
+/* parte de produtos */
+
 body.prod{
     background-color: #15395942;
 }
@@ -218,6 +220,7 @@ div.img#p15{
 div.prod:hover>div.img#p15{
     background-image: url(imagens/imagens-produtos/p15.2.jpg);
 }
+ /* tela de login */
 
 section#login{
     margin: 10px auto;
@@ -231,7 +234,8 @@ section#login>form{
     width: 70%;
     padding-top: 30px;
     margin: auto;
-    /* border: 1px solid black; */
+    display: block;
+    position: relative;
 }
 
 section#login h1{
@@ -292,6 +296,19 @@ section#login input.submit:hover{
     color: white;
 }
 
+ /* parte do cadastro */
+section#login div.pai{
+    margin: 10px auto;
+    display: block;
+}
+
+section#login div.elm{
+    height: 40vh;
+    width: 35%;
+    background-color: #102940;
+    display: inline-block;
+}
+
 section#login div#d1{
 
 }
@@ -300,14 +317,13 @@ section#login div#d2{
 
 }
 
+/* sobre nos */
+
 article.bluebox{
     margin: 50px;
     padding: 20px 50px;
-    /* min-height: 100vh; */
-    /* background-color: var(--cor4); */
     color: black;
     text-align: center;
-    /* box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.486); */
     border-radius: 30px;
 }
 
