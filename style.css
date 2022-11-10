@@ -281,6 +281,10 @@ section#login input.inputtxt{
     display: block;
 }
 
+section#login input.submit:active{
+    border-radius: 0px;
+}
+
 section#login input.submit{
     border: 1px solid black;
     height: 5vh;
@@ -298,10 +302,6 @@ section#login input.submit:hover{
 
  /* parte do cadastro */
 
- section#login.b{
-    height: 115vh;
- }
-
 section#login div.pai{
     margin: 10px auto;
     position: relative;
@@ -309,7 +309,7 @@ section#login div.pai{
 }
 
 section#login div.elm{
-    height: 20vh;
+    /* height: 20vh; */
     width: 49.3%;
     display: inline-block;
 }
