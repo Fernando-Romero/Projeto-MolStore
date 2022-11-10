@@ -275,7 +275,6 @@ section#login input{
 }
 
 section#login input.inputtxt{
-    padding-left: 5px;
     width: 70%;
     height: 20px;
     margin: auto;
@@ -289,7 +288,6 @@ section#login input.submit{
     width: 70%;
     margin: 30px auto;
     display: block;
-    padding-left: 5px;
 }
 
 section#login input.submit:hover{
