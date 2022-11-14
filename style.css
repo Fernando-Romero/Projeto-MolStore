@@ -58,6 +58,12 @@ nav form input{
     border: none;
 }
 
+ /* index */
+
+div#indeximg{
+    text-align: center;
+}
+
 /* parte de produtos */
 
 body.prod{
