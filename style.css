@@ -60,8 +60,24 @@ nav form input{
 
  /* index */
 
-div#indeximg{
-    text-align: center;
+div.indeximg{
+    vertical-align: middle;
+    height: 66.66vw;
+    background-color: #400D1A;
+    margin: 30px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+div.indeximg#img1{
+    background-image: url(imagens/happy-smiling-young-girls-with-many-shopping-bags-having-fun-isolated-over-blue-studio-background.jpg);
+    background-position:  right top;
+}
+
+div.indeximg#img2{
+    background-image: url(imagens/group-of-happy-and-diverse-volunteers.jpg);
+    background-position:  center;
 }
 
 /* parte de produtos */
