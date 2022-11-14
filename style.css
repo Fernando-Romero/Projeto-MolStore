@@ -43,7 +43,7 @@ nav div{
 
 nav a:hover{
     color: var(--cor1);
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
 nav form{
