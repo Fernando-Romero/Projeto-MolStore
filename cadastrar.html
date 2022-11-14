@@ -34,7 +34,7 @@
     </header>
     <section id="login" class="b">
         <h1>CADASTRO</h1>
-        <form action="" method="post">
+        <form action="gravar.jsp" name="form1" method="post" id="form">
             <p>Email</p>
             <input type="text" name="email" id="email" placeholder="Exemplo@email.com" class="inputtxt">
             <div class="pai">
@@ -66,9 +66,56 @@
     </footer>
     <script>
         function ver(){
-            var pass = document.querySelector('input#pass')
-            var confpass = document.querySelector('input#confpass')
-            if 
+            //colocar todos os bg brancos
+            document.querySelector('input#pass').style.background = 'white'
+            document.querySelector('input#confpass').style.background = 'white'
+            document.querySelector('input#nome').style.background = 'white'
+            document.querySelector('input#sobrenome').style.background = 'white'
+            document.querySelector('input#email').style.background = 'white'
+
+            //variaveis com os valores
+            var email = document.querySelector('input#email').value
+            var pass = document.querySelector('input#pass').value
+            var confpass = document.querySelector('input#confpass').value
+            var nome = document.querySelector('input#nome').value
+            var sobrenome = document.querySelector('input#sobrenome').value
+            
+            //verificar campo email
+            if(email.length == 0 || email.indexOf('@') < 0){
+                alert('erro')
+                document.querySelector('input#email').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar nome
+            if(nome.length == 0){
+                alert('erro')
+                document.querySelector('input#nome').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar sobrenome
+            if(sobrenome.length == 0){
+                alert('erro')
+                document.querySelector('input#sobrenome').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar senha
+            if(pass.length == 0){
+                alert('erro')
+                document.querySelector('input#pass').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar se as senhas conferem
+            if(pass != confpass){
+                alert('Senhas não coincidem!')
+                document.querySelector('input#pass').style.background = '#A60A0A'
+                document.querySelector('input#confpass').style.background = '#A60A0A'
+                return false
+            }
+            document.getElementById('form').submit()
         }
         
         
