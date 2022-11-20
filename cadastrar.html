@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MolStore</title>
+    <!--Icones para dispositivos e navegadores diferentes-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="login">
+    <!--Barra de cima-->
+    <header>
+        <nav>
+            <a href="index.html" target="_self" rel="prev"><img src="android-chrome-192x192.png" alt="MolStore icon" id="icon"></a>
+            
+            <div>
+                <a href="index.html" target="_self" rel="prev">Home</a>
+                <a href="produtos.html" target="_self" rel="next" >Produtos</a>
+                
+                <a href="sobrenos.html" target="_self" rel="next">Sobre Nós</a>
+                <form action="">
+                    <input type="search" name="search" id="search" placeholder="Buscar produtos.">
+                </form>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <section id="login" class="b">
+        <h1>CADASTRO</h1>
+        <form action="gravar.jsp" name="form1" method="post" id="form">
+            <p>Email</p>
+            <input type="text" name="email" id="email" placeholder="Exemplo@email.com" class="inputtxt">
+            <div class="pai">
+                <div class="elm" id="d1">
+
+                    <p>Nome</p>
+                    <input type="text" name="nome" id="nome" placeholder="Exemplo" class="inputtxt2">
+
+                    <p>Senha</p>
+                    <input type="password" name="pass" id="pass"  class="inputtxt2">
+
+                </div>
+                <div class="elm" id="d2">
+
+                    <p>Sobrenome</p>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Exemplo" class="inputtxt2">
+
+                    <p>Confirme sua senha</p>
+                    <input type="password" name="confpass" id="confpass"  class="inputtxt2">
+
+                </div>
+            </div>
+            <input type="button" value="Registrar" class="submit" onclick="ver()">
+            <h3>Já possui uma conta? <a href="login.html">Logar</a></h3>
+        </form>
+    </section>
+    <footer>
+        <p>Site feito por.</p>
+    </footer>
+    <script>
+        function ver(){
+            //colocar todos os bg brancos
+            document.querySelector('input#pass').style.background = 'white'
+            document.querySelector('input#confpass').style.background = 'white'
+            document.querySelector('input#nome').style.background = 'white'
+            document.querySelector('input#sobrenome').style.background = 'white'
+            document.querySelector('input#email').style.background = 'white'
+
+            //variaveis com os valores
+            var email = document.querySelector('input#email').value
+            var pass = document.querySelector('input#pass').value
+            var confpass = document.querySelector('input#confpass').value
+            var nome = document.querySelector('input#nome').value
+            var sobrenome = document.querySelector('input#sobrenome').value
+            
+            //verificar campo email
+            if(email.length == 0 || email.indexOf('@') < 0){
+                alert('erro')
+                document.querySelector('input#email').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar nome
+            if(nome.length == 0){
+                alert('erro')
+                document.querySelector('input#nome').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar sobrenome
+            if(sobrenome.length == 0){
+                alert('erro')
+                document.querySelector('input#sobrenome').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar senha
+            if(pass.length == 0){
+                alert('erro')
+                document.querySelector('input#pass').style.background = '#A60A0A'
+                return false
+            }
+
+            //verificar se as senhas conferem
+            if(pass != confpass){
+                alert('Senhas não coincidem!')
+                document.querySelector('input#pass').style.background = '#A60A0A'
+                document.querySelector('input#confpass').style.background = '#A60A0A'
+                return false
+            }
+            document.getElementById('form').submit()
+        }
+        
+        
+    </script>
+</body>
+</html>
